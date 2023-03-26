@@ -2,7 +2,7 @@
 	<div class="p-2">
 		<h1 class="font-semibold text-xl"><span class="border-l-4 border-green-500 mr-2"></span>Creative集団 SCSとは？</h1>
 		<p class="text-base">
-			シンプルに言えば「何でもやる」。「これができます」と言うんじゃなくて「こういうのできます？」を叶えたいですね。「Odd
+			Sotto Creative Studio(通称:SCS)はシンプルに言えば「何でもやる」。「これができます」と言うんじゃなくて「こういうのできます？」を叶えたいですね。「Odd
 			Future」や「BROCKHAMPTON」などに影響を受けていて、福岡発のコレクティブとして進化していきたいと思っています。
 		</p>
 		<h1 class="font-semibold text-xl"><span class="border-l-4 border-green-500 mr-2"></span>SCSの構成は？</h1>
