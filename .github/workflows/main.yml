@@ -12,4 +12,10 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run:
-          aws s3 cp --recursive --region ap-northeast-1 build s3://sottoproject30
+          aws s3 cp --recursive --region ap-northeast-1 s3://sottoproject30
+#       - name: Upload to S3
+#         uses: jakejarvis/s3-sync-action@master
+#         with:
+#           args: --acl public-read --follow-symlinks --delete
+#           source_dir: ./dist/
+#           bucket_url: s3://my-bucket-name
