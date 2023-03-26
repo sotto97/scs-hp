@@ -74,6 +74,7 @@
 					<!-- contentのクラスに関してはtailwindを使用すること -->
 					<div class="container">
 						<about-component></about-component>
+						<artist-component></artist-component>
 						<news-component></news-component>
 						<qa-component></qa-component>
 						<!-- <router-link to="/foo">Go to Foo</router-link><br />
@@ -149,6 +150,7 @@
 					AboutComponent: httpVueLoader("./component/about.vue"),
 					NewsComponent: httpVueLoader("./component/news.vue"),
 					QaComponent: httpVueLoader("./component/qa.vue"),
+					ArtistComponent: httpVueLoader("./component/artist.vue"),
 				},
 				vuetify: new Vuetify(),
 				data() {
