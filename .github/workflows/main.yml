@@ -2,7 +2,7 @@ name: SCS-HP Deploy on S3
 on:
   push:
       branches:
-        - master
+        - main
 jobs:
   build:
     runs-on: ubuntu-latest
