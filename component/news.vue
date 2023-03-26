@@ -2,7 +2,7 @@
 	<div class="p-2">
 		<h1 class="font-semibold text-xl"><span class="border-l-4 border-green-500 mr-2"></span>プレスリリース</h1>
 		<v-container v-for="news_list in news_lists" :key="news_list.date">
-			<v-row class="hover:bg-green-200 transition cursor-pointer">
+			<v-row class="hover:bg-gray-200 transition cursor-pointer">
 				<v-col cols="3" class="p-0">
 					<v-list-item-content class="pl-1">
 						<v-list-item-title>{{ news_list.date }}</v-list-item-title>
