@@ -31,7 +31,16 @@
 								<v-list-item-title class="title"> Sotto Creative Studio </v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
-						<v-divider></v-divider>
+						<div class="bg-gray-100 h-auto rounded-lg">
+							<div class="p-2">
+								<p class="font-semibold">SCSは神戸を拠点に活動するクリエイティブ集団です。</p>
+								<p class="text-sm">スポンサー・メンバー随時募集しております。以下のフォームより承っております。</p>
+								<a href="" class="w-full cursor-pointer text-center">
+									<p class="py-1 border-solid border-2 border-black bg-black hover:bg-white transition text-white hover:text-black">Contact us</p>
+								</a>
+							</div>
+						</div>
+						<!-- <v-divider></v-divider> -->
 						<v-list nav dense>
 							<v-list-group v-for="nav_list in nav_lists" :key="nav_list.name" :prepend-icon="nav_list.icon" no-action :append-icon="nav_list.lists ? undefined : ''">
 								<template v-slot:activator>
