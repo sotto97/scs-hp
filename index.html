@@ -31,7 +31,7 @@
 								<v-list-item-title class="title"> Sotto Creative Studio </v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
-						<!-- <v-divider></v-divider> -->
+						<v-divider></v-divider>
 						<v-list nav dense>
 							<v-list-group v-for="nav_list in nav_lists" :key="nav_list.name" :prepend-icon="nav_list.icon" no-action :append-icon="nav_list.lists ? undefined : ''">
 								<template v-slot:activator>
@@ -41,12 +41,15 @@
 								</template>
 								<v-list-item v-for="list in nav_list.lists" :key="list">
 									<v-list-item-content>
-										<v-list-item-title>{{ list }}</v-list-item-title>
+										<router-link :to="nav_list.path">{{ list }}</router-link>
+										<!-- <router-link to="/about">Go to about</router-link><br /> -->
+										<!-- <v-list-item-title>{{ list }}</v-list-item-title> -->
 									</v-list-item-content>
 								</v-list-item>
 							</v-list-group>
 						</v-list>
-						<div class="bg-gray-100 h-auto rounded-lg">
+						<v-divider></v-divider>
+						<div class="bg-gray-100 h-auto rounded-lg mt-4">
 							<div class="p-2">
 								<p class="font-semibold">SCSは神戸を拠点に活動するクリエイティブ集団です。</p>
 								<p class="text-sm">スポンサー・メンバー随時募集しております。以下のフォームより承っております。</p>
@@ -82,13 +85,15 @@
 				<v-content>
 					<!-- contentのクラスに関してはtailwindを使用すること -->
 					<div class="container">
-						<about-component></about-component>
+						<router-view></router-view>
+						<!-- <about-component></about-component>
 						<artist-component></artist-component>
 						<news-component></news-component>
-						<qa-component></qa-component>
+						<qa-component></qa-component> -->
 						<!-- <router-link to="/foo">Go to Foo</router-link><br />
-                        <router-link to="/bar">Go to Bar</router-link>
-                        <router-view></router-view> -->
+						<router-link to="/music">Go to Music</router-link><br />
+						<router-link to="/about">Go to about</router-link><br />
+						<router-link to="/bar">Go to Bar</router-link> -->
 					</div>
 				</v-content>
 				<v-footer color="black" dark app height="auto" class="mt-5" padless>
@@ -102,10 +107,11 @@
 		</div>
 		<script>
 			const routes = [
-				{ name: "foo", path: "/foo", component: httpVueLoader("./component/foo.vue") },
-				{ name: "bar", path: "/bar", component: httpVueLoader("./component/bar.vue") },
+				// { name: "foo", path: "/foo", component: httpVueLoader("./component/foo.vue") },
+				// { name: "bar", path: "/bar", component: httpVueLoader("./component/bar.vue") },
 				{ name: "music", path: "/music", component: httpVueLoader("./component/music.vue") },
 				{ name: "apparel", path: "/apparel", component: httpVueLoader("./component/apparel.vue") },
+				{ name: "about", path: "/about", component: httpVueLoader("./component/about.vue") },
 			];
 
 			const router = new VueRouter({
@@ -116,6 +122,7 @@
 				{
 					name: "Our Studio",
 					icon: "mdi-garage-open",
+					path: "/about",
 				},
 				{
 					name: "Music",
@@ -123,32 +130,38 @@
 					title: "Music",
 					icon: "mdi-music",
 					lists: ["Event", "DJs"],
+					path: "/music",
 				},
 				{
 					name: "Apparel",
 					params: "apparel",
 					title: "Apparel",
 					icon: "mdi-tshirt-crew",
+					path: "/apparel",
 				},
 				{
 					name: "Coding",
 					params: "coding",
 					title: "Coding",
 					icon: "mdi-code-tags",
+					path: "",
 				},
 				{
 					name: "Cafe",
 					icon: "mdi-coffee",
 					lists: ["神戸", "代官山"],
+					path: "/apparel",
 				},
 				{
 					name: "Graphic",
 					icon: "mdi-camera-iris",
 					lists: ["Photographer"],
+					path: "",
 				},
 				{
 					name: "Fitness Gym",
 					icon: "mdi-dumbbell",
+					path: "",
 				},
 			];
 

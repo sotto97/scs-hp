@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<b>{{ text }}</b>
+		<img src="../img/scs_logo.png" alt="" class="w-full" />
 	</div>
 </template>
 <script>
