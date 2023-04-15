@@ -7,7 +7,7 @@
 module.exports = {
 	data: function () {
 		return {
-			text: "Music",
+			text: "Top",
 		};
 	},
 };

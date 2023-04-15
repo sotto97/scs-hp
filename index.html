@@ -84,17 +84,16 @@
 				</v-app-bar>
 				<v-content>
 					<!-- contentのクラスに関してはtailwindを使用すること -->
-					<div class="container">
-						<router-view></router-view>
-						<!-- <about-component></about-component>
-						<artist-component></artist-component>
-						<news-component></news-component>
-						<qa-component></qa-component> -->
-						<!-- <router-link to="/foo">Go to Foo</router-link><br />
+					<!-- <router-view></router-view> -->
+					<top-component></top-component>
+					<!-- <about-component></about-component>
+					<artist-component></artist-component>
+					<news-component></news-component>
+					<qa-component></qa-component> -->
+					<!-- <router-link to="/foo">Go to Foo</router-link><br />
 						<router-link to="/music">Go to Music</router-link><br />
 						<router-link to="/about">Go to about</router-link><br />
 						<router-link to="/bar">Go to Bar</router-link> -->
-					</div>
 				</v-content>
 				<v-footer color="black" dark app height="auto" class="mt-5" padless>
 					<v-container>
@@ -109,6 +108,7 @@
 			const routes = [
 				// { name: "foo", path: "/foo", component: httpVueLoader("./component/foo.vue") },
 				// { name: "bar", path: "/bar", component: httpVueLoader("./component/bar.vue") },
+				{ name: "top", path: "/top", component: httpVueLoader("./component/top.vue") },
 				{ name: "music", path: "/music", component: httpVueLoader("./component/music.vue") },
 				{ name: "apparel", path: "/apparel", component: httpVueLoader("./component/apparel.vue") },
 				{ name: "about", path: "/about", component: httpVueLoader("./component/about.vue") },
@@ -169,6 +169,7 @@
 				el: "#app",
 				router: router,
 				components: {
+					TopComponent: httpVueLoader("./component/top.vue"),
 					AboutComponent: httpVueLoader("./component/about.vue"),
 					NewsComponent: httpVueLoader("./component/news.vue"),
 					QaComponent: httpVueLoader("./component/qa.vue"),

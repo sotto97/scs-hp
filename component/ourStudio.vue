@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="container">
 		<about-component></about-component>
 		<artist-component></artist-component>
 		<news-component></news-component>
