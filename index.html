@@ -22,28 +22,24 @@
 	</head>
 	<body>
 		<div id="app">
-			<v-app>
+			<v-app dark>
 				<!-- ハンバーガーメニュー内 -->
 				<v-navigation-drawer app v-model="drawer" clipped elevation="18">
 					<v-container>
-						<v-list-item>
-							<v-list-item-content>
-								<v-list-item-title class="title"> Sotto Creative Studio </v-list-item-title>
-							</v-list-item-content>
+						<v-list-item to="/" style="color: black; background-color: none">
+							<v-list-item-title class="title"> Sotto Creative Studio </v-list-item-title>
 						</v-list-item>
 						<v-divider></v-divider>
 						<v-list nav dense>
 							<v-list-group v-for="nav_list in nav_lists" :key="nav_list.name" :prepend-icon="nav_list.icon" no-action :append-icon="nav_list.lists ? undefined : ''">
 								<template v-slot:activator>
 									<v-list-item-content>
-										<v-list-item-title>{{ nav_list.name }}</v-list-item-title>
+										<router-link :to="nav_list.path" style="color: black">{{ nav_list.name }}</router-link>
 									</v-list-item-content>
 								</template>
 								<v-list-item v-for="list in nav_list.lists" :key="list">
 									<v-list-item-content>
 										<router-link :to="nav_list.path">{{ list }}</router-link>
-										<!-- <router-link to="/about">Go to about</router-link><br /> -->
-										<!-- <v-list-item-title>{{ list }}</v-list-item-title> -->
 									</v-list-item-content>
 								</v-list-item>
 							</v-list-group>
@@ -70,7 +66,6 @@
 						<!-- ヘッダータイトル -->
 						<v-col cols="8">
 							<v-toolbar-title>
-								<!-- <div class="text-center">Sotto Creative Studio</div> -->
 								<div class="text-center">Sotto Creative Studio</div>
 							</v-toolbar-title>
 						</v-col>
@@ -84,16 +79,7 @@
 				</v-app-bar>
 				<v-content>
 					<!-- contentのクラスに関してはtailwindを使用すること -->
-					<!-- <router-view></router-view> -->
-					<top-component></top-component>
-					<!-- <about-component></about-component>
-					<artist-component></artist-component>
-					<news-component></news-component>
-					<qa-component></qa-component> -->
-					<!-- <router-link to="/foo">Go to Foo</router-link><br />
-						<router-link to="/music">Go to Music</router-link><br />
-						<router-link to="/about">Go to about</router-link><br />
-						<router-link to="/bar">Go to Bar</router-link> -->
+					<router-view></router-view>
 				</v-content>
 				<v-footer color="black" dark app height="auto" class="mt-5 absolute bottom-0" padless>
 					<v-container>
@@ -106,9 +92,7 @@
 		</div>
 		<script>
 			const routes = [
-				// { name: "foo", path: "/foo", component: httpVueLoader("./component/foo.vue") },
-				// { name: "bar", path: "/bar", component: httpVueLoader("./component/bar.vue") },
-				{ name: "top", path: "/top", component: httpVueLoader("./component/top.vue") },
+				{ name: "top", path: "/", component: httpVueLoader("./component/top.vue") },
 				{ name: "music", path: "/music", component: httpVueLoader("./component/music.vue") },
 				{ name: "apparel", path: "/apparel", component: httpVueLoader("./component/apparel.vue") },
 				{ name: "about", path: "/about", component: httpVueLoader("./component/about.vue") },
@@ -129,7 +113,7 @@
 					params: "music",
 					title: "Music",
 					icon: "mdi-music",
-					lists: ["Event", "DJs"],
+					// lists: ["Event", "DJs"],
 					path: "/music",
 				},
 				{
@@ -137,7 +121,7 @@
 					params: "apparel",
 					title: "Apparel",
 					icon: "mdi-tshirt-crew",
-					path: "/apparel",
+					path: "",
 				},
 				{
 					name: "Coding",
@@ -150,7 +134,7 @@
 					name: "Cafe",
 					icon: "mdi-coffee",
 					lists: ["神戸", "代官山"],
-					path: "/apparel",
+					path: "",
 				},
 				{
 					name: "Graphic",
@@ -168,18 +152,29 @@
 			new Vue({
 				el: "#app",
 				router: router,
-				components: {
-					TopComponent: httpVueLoader("./component/top.vue"),
-					AboutComponent: httpVueLoader("./component/about.vue"),
-					NewsComponent: httpVueLoader("./component/news.vue"),
-					QaComponent: httpVueLoader("./component/qa.vue"),
-					ArtistComponent: httpVueLoader("./component/artist.vue"),
-				},
+				// components: {
+				// 	TopComponent: httpVueLoader("./component/top.vue"),
+				// 	AboutComponent: httpVueLoader("./component/about.vue"),
+				// 	NewsComponent: httpVueLoader("./component/news.vue"),
+				// 	QaComponent: httpVueLoader("./component/qa.vue"),
+				// 	ArtistComponent: httpVueLoader("./component/artist.vue"),
+				// },
 				vuetify: new Vuetify(),
 				data() {
 					return {
 						drawer: null,
 						nav_lists: nav_lists,
+						// theme: {
+						// 	themes: {
+						// 		light: {
+						// 			primary: "#3f51b5",
+						// 			secondary: "#b0bec5",
+						// 			accent: "#8c9eff",
+						// 			error: "#b71c1c",
+						// 			text: "#000000", // テキスト色を黒に設定
+						// 		},
+						// 	},
+						// },
 					};
 				},
 			});
