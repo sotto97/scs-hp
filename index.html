@@ -22,19 +22,19 @@
 	</head>
 	<body>
 		<div id="app">
-			<v-app dark>
+			<v-app>
 				<!-- ハンバーガーメニュー内 -->
 				<v-navigation-drawer app v-model="drawer" clipped elevation="18">
 					<v-container>
-						<v-list-item to="/" style="color: black; background-color: none">
+						<v-list-item to="/" class="white black--text">
 							<v-list-item-title class="title"> Sotto Creative Studio </v-list-item-title>
 						</v-list-item>
 						<v-divider></v-divider>
 						<v-list nav dense>
-							<v-list-group v-for="nav_list in nav_lists" :key="nav_list.name" :prepend-icon="nav_list.icon" no-action :append-icon="nav_list.lists ? undefined : ''">
+							<v-list-group v-for="nav_list in nav_lists" :key="nav_list.name" :prepend-icon="nav_list.icon" no-action :append-icon="nav_list.lists ? undefined : ''" mandatory color="indigo">
 								<template v-slot:activator>
 									<v-list-item-content>
-										<router-link :to="nav_list.path" style="color: black">{{ nav_list.name }}</router-link>
+										<router-link :to="nav_list.path" class="black--text">{{ nav_list.name }}</router-link>
 									</v-list-item-content>
 								</template>
 								<v-list-item v-for="list in nav_list.lists" :key="list">
@@ -179,5 +179,10 @@
 				},
 			});
 		</script>
+		<style>
+			.v-list-item__content {
+				background-color: transparent;
+			}
+		</style>
 	</body>
 </html>
