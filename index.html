@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Vue.js -->
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/http-vue-loader/dist/httpVueLoader.min.js"></script> -->
 		<script src="https://unpkg.com/vue-router@3.5.2/dist/vue-router.js"></script>
 		<script src="https://unpkg.com/http-vue-loader"></script>
 		<!-- Vuetify -->
@@ -24,26 +23,52 @@
 		<div id="app">
 			<v-app>
 				<!-- ハンバーガーメニュー内 -->
+				<!-- <v-card class="mx-auto" max-width="400">
+					<v-list>
+						<v-list-item-group v-model="model" mandatory color="indigo">
+							<v-list-item v-for="(item, i) in items" :key="i">
+								<v-list-item-icon>
+									<v-icon v-text="item.icon"></v-icon>
+								</v-list-item-icon>
+
+								<v-list-item-content>
+									<v-list-item-title v-text="item.text"></v-list-item-title>
+								</v-list-item-content>
+							</v-list-item>
+						</v-list-item-group>
+					</v-list>
+				</v-card> -->
 				<v-navigation-drawer app v-model="drawer" clipped elevation="18">
 					<v-container>
-						<v-list-item to="/" class="white black--text">
+						<v-list-item>
 							<v-list-item-title class="title"> Sotto Creative Studio </v-list-item-title>
 						</v-list-item>
 						<v-divider></v-divider>
-						<v-list nav dense>
-							<v-list-group v-for="nav_list in nav_lists" :key="nav_list.name" :prepend-icon="nav_list.icon" no-action :append-icon="nav_list.lists ? undefined : ''" mandatory color="indigo">
-								<template v-slot:activator>
-									<v-list-item-content>
-										<router-link :to="nav_list.path" class="black--text">{{ nav_list.name }}</router-link>
-									</v-list-item-content>
-								</template>
-								<v-list-item v-for="list in nav_list.lists" :key="list">
-									<v-list-item-content>
-										<router-link :to="nav_list.path">{{ list }}</router-link>
-									</v-list-item-content>
-								</v-list-item>
-							</v-list-group>
-						</v-list>
+
+						<v-list-item-group v-model="selectedItem">
+							<v-list nav dense>
+								<v-list-group
+									v-for="nav_list in nav_lists"
+									:key="nav_list.name"
+									:prepend-icon="nav_list.icon"
+									no-action
+									:append-icon="nav_list.lists ? undefined : ''"
+									mandatory
+									:color="nav_list.color"
+								>
+									<template v-slot:activator>
+										<v-list-item-content>
+											<router-link :to="nav_list.path" class="black--text">{{ nav_list.name }}</router-link>
+										</v-list-item-content>
+									</template>
+									<v-list-item v-for="list in nav_list.lists" :key="list">
+										<v-list-item-content>
+											<router-link :to="nav_list.path" class="black--text">{{ list }}</router-link>
+										</v-list-item-content>
+									</v-list-item>
+								</v-list-group>
+							</v-list>
+						</v-list-item-group>
 						<v-divider></v-divider>
 						<div class="bg-gray-100 h-auto rounded-lg mt-4">
 							<div class="p-2">
@@ -66,7 +91,9 @@
 						<!-- ヘッダータイトル -->
 						<v-col cols="8">
 							<v-toolbar-title>
-								<div class="text-center">Sotto Creative Studio</div>
+								<div class="text-center">
+									<a href="/" class="white--text">Sotto Creative Studio</a>
+								</div>
 							</v-toolbar-title>
 						</v-col>
 						<!-- 右上のログイン -->
@@ -107,14 +134,15 @@
 					name: "Our Studio",
 					icon: "mdi-garage-open",
 					path: "/about",
+					color: "indigo",
 				},
 				{
 					name: "Music",
 					params: "music",
 					title: "Music",
 					icon: "mdi-music",
-					// lists: ["Event", "DJs"],
 					path: "/music",
+					color: "indigo",
 				},
 				{
 					name: "Apparel",
@@ -122,6 +150,7 @@
 					title: "Apparel",
 					icon: "mdi-tshirt-crew",
 					path: "",
+					color: "indigo",
 				},
 				{
 					name: "Coding",
@@ -129,60 +158,42 @@
 					title: "Coding",
 					icon: "mdi-code-tags",
 					path: "",
+					color: "indigo",
 				},
 				{
 					name: "Cafe",
 					icon: "mdi-coffee",
 					lists: ["神戸", "代官山"],
 					path: "",
+					color: "indigo",
 				},
 				{
 					name: "Graphic",
 					icon: "mdi-camera-iris",
 					lists: ["Photographer"],
 					path: "",
+					color: "indigo",
 				},
 				{
 					name: "Fitness Gym",
 					icon: "mdi-dumbbell",
 					path: "",
+					color: "indigo",
 				},
 			];
 
 			new Vue({
 				el: "#app",
 				router: router,
-				// components: {
-				// 	TopComponent: httpVueLoader("./component/top.vue"),
-				// 	AboutComponent: httpVueLoader("./component/about.vue"),
-				// 	NewsComponent: httpVueLoader("./component/news.vue"),
-				// 	QaComponent: httpVueLoader("./component/qa.vue"),
-				// 	ArtistComponent: httpVueLoader("./component/artist.vue"),
-				// },
 				vuetify: new Vuetify(),
 				data() {
 					return {
 						drawer: null,
+						selectedItem: null,
 						nav_lists: nav_lists,
-						// theme: {
-						// 	themes: {
-						// 		light: {
-						// 			primary: "#3f51b5",
-						// 			secondary: "#b0bec5",
-						// 			accent: "#8c9eff",
-						// 			error: "#b71c1c",
-						// 			text: "#000000", // テキスト色を黒に設定
-						// 		},
-						// 	},
-						// },
 					};
 				},
 			});
 		</script>
-		<style>
-			.v-list-item__content {
-				background-color: transparent;
-			}
-		</style>
 	</body>
 </html>
