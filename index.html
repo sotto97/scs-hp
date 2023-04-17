@@ -26,21 +26,6 @@
 		<div id="app">
 			<v-app>
 				<!-- ハンバーガーメニュー内 -->
-				<!-- <v-card class="mx-auto" max-width="400">
-					<v-list>
-						<v-list-item-group v-model="model" mandatory color="indigo">
-							<v-list-item v-for="(item, i) in items" :key="i">
-								<v-list-item-icon>
-									<v-icon v-text="item.icon"></v-icon>
-								</v-list-item-icon>
-
-								<v-list-item-content>
-									<v-list-item-title v-text="item.text"></v-list-item-title>
-								</v-list-item-content>
-							</v-list-item>
-						</v-list-item-group>
-					</v-list>
-				</v-card> -->
 				<v-navigation-drawer app v-model="drawer" clipped elevation="18">
 					<v-container>
 						<v-list-item>
@@ -109,6 +94,7 @@
 				</v-app-bar>
 				<v-content>
 					<!-- contentのクラスに関してはtailwindを使用すること -->
+					<top-component></top-component>
 					<router-view></router-view>
 				</v-content>
 				<v-footer color="black" dark app height="auto" class="mt-5 absolute bottom-0" padless>
@@ -123,6 +109,7 @@
 		<script>
 			const routes = [
 				{ name: "top", path: "/", component: httpVueLoader("./component/top.vue") },
+				{ name: "ourStudio", path: "/ourStudio", component: httpVueLoader("./component/ourStudio.vue") },
 				{ name: "music", path: "/music", component: httpVueLoader("./component/music.vue") },
 				{ name: "apparel", path: "/apparel", component: httpVueLoader("./component/apparel.vue") },
 				{ name: "about", path: "/about", component: httpVueLoader("./component/about.vue") },
@@ -136,7 +123,7 @@
 				{
 					name: "Our Studio",
 					icon: "mdi-garage-open",
-					path: "/about",
+					path: "/ourStudio",
 					color: "indigo",
 				},
 				{
@@ -194,6 +181,13 @@
 						drawer: null,
 						selectedItem: null,
 						nav_lists: nav_lists,
+						components: {
+							TopComponent: httpVueLoader("./component/top.vue"),
+							AboutComponent: httpVueLoader("./component/about.vue"),
+							NewsComponent: httpVueLoader("./component/news.vue"),
+							QaComponent: httpVueLoader("./component/qa.vue"),
+							ArtistComponent: httpVueLoader("./component/artist.vue"),
+						},
 					};
 				},
 			});
