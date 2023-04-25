@@ -1,17 +1,37 @@
 <template>
 	<div class="p-2">
-		<img src="../img/office.jpeg" alt="" class="rounded-lg shadow-lg" />
-		<!-- <h1 class="font-semibold text-xl mt-2 border-l-4 border-green-500 mr-2 pl-2">Sotto<br />Creative<br />Studioとは？</h1> -->
-		<h1 class="font-semibold text-xl mt-2 border-l-4 border-green-500 mr-2 pl-2">Sotto Creative Studioとは？</h1>
-		<p class="text-base">
-			シンプルに言えば「何でもやる」。「これができます」と言うんじゃなくて「こういうのできます？」を叶えたいですね。「Odd
-			Future」や「BROCKHAMPTON」などに影響を受けていて、福岡発のコレクティブとして進化していきたいと思っています。
-		</p>
+		<h1 class="font-semibold text-7xl mt-2"><span class="text-green-500">S</span>otto</h1>
+		<h1 class="font-semibold text-7xl mt-2">Creative</h1>
+		<h1 class="font-semibold text-7xl mt-2">Studio</h1>
+		<!-- <h1 class="font-semibold text-7xl mt-2">Sotto Creative Studio</h1> -->
+		<p class="text-base mt-2">シンプルに言えば、何でもこなせるクリエイティブ集団。音楽、グラフィック、アパレル、カフェ経営など、各々の立ち位置で自由に表現活動を行っている。</p>
 		<h1 class="font-semibold text-xl"><span class="border-l-4 border-green-500 mr-2"></span>SCSの構成は？</h1>
-		<p class="text-base">
-			「SCS records.」はさまざまなセクションで構成されていて、音楽、グラフィック、アパレルなど、各々の立ち位置で自由に表現活動を行う集団です。音楽のメインチームである「週末CITY PLAY
-			BOYZ」の僕(BUGS)、pen public、bill、north NADOをはじめ、バリスタもいればヘアメイクアーティストもいて、裏方を含めるとクルーは総勢17人です。
-		</p>
+
+		<p class="text-base">「SCS」はさまざまなセクションで構成されていて、音楽、グラフィック、アパレルなど、各々の立ち位置で自由に表現活動を行う集団です。</p>
+		<!-- <div class="flex">
+			<div class="flex-1 m-1 w-40 bg-black h-40"></div>
+			<div class="flex-1 m-1 w-40 bg-black h-40"></div>
+			<div class="flex-1 m-1 w-40 bg-black h-40"></div>
+			<div class="flex-1 m-1 w-40 bg-black h-40"></div>
+		</div> -->
+		<div class="flex flex-wrap">
+			<!-- <div style="width: 350px; height:350px;" class="w-40 h-40 p-2 bg-black"></div> -->
+			<div style="width: 160px; height: 160px" class="m-1 bg-black text-center text-white">
+				<p class="text-white p-2">test-document</p>
+			</div>
+			<div style="width: 160px; height: 160px" class="m-1 bg-black text-center text-white">
+				<p class="text-white p-2">test-document</p>
+			</div>
+			<div style="width: 160px; height: 160px" class="m-1 bg-black text-center text-white">
+				<p class="text-white p-2">test-document</p>
+			</div>
+			<div style="width: 160px; height: 160px" class="m-1 bg-black text-center text-white">
+				<p class="text-white p-2">test-document</p>
+			</div>
+			<div style="width: 160px; height: 160px" class="m-1 bg-black text-center text-white">
+				<p class="text-white p-2">test-document</p>
+			</div>
+		</div>
 	</div>
 </template>
 
