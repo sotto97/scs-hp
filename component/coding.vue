@@ -17,6 +17,7 @@
 				</div>
 			</div>
 		</div>
+		<p class="mt-2">※参考：<a href="https://gradientbuttons.colorion.co/">https://gradientbuttons.colorion.co/</a></p>
 	</div>
 </template>
 <script>
