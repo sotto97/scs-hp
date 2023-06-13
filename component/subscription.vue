@@ -1,87 +1,108 @@
 <template>
-	<!-- 参考はこれ；https://flowrift.com/c/full-page/6tdav?view=preview -->
-	<!-- hero - start -->
-	<div class="bg-white pb-6 sm:pb-8 lg:pb-12">
-		<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-			<header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
-				<!-- logo - start -->
-				<a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
-					<svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-6 text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-						<path d="M96 0V47L48 94H0V47L48 0H96Z" />
-					</svg>
-					<span class="text-black-800">SCS</span>
-				</a>
-				<!-- logo - end -->
+	<div class="bg-white py-6 sm:py-8 lg:py-12">
+		<div class="mx-auto max-w-screen-xl px-4 md:px-8">
+			<!-- text - start -->
+			<div class="mb-10 md:mb-16">
+				<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">サブスクリプション一覧</h2>
 
-				<!-- nav - start -->
-				<!-- <nav class="hidden gap-12 lg:flex">
-					<a href="#" class="text-lg font-semibold text-indigo-500">Home</a>
-					<a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Features</a>
-					<a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Pricing</a>
-					<a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
-				</nav> -->
-				<!-- nav - end -->
-
-				<!-- buttons - start -->
-				<!-- <a
-					href="#"
-					class="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-					>Contact Sales</a
-				> -->
-
-				<!-- <button
-					type="button"
-					class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
-				>
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-						<path
-							fill-rule="evenodd"
-							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-							clip-rule="evenodd"
+				<p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+					This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.
+				</p>
+			</div>
+			<div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-2 xl:grid-cols-2 xl:gap-8">
+				<!-- article - start -->
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
+					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
+						<img
+							src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+							loading="lazy"
+							alt="Photo by Minh Pham"
+							class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
 						/>
-					</svg>
-					Menu
-				</button> -->
-				<!-- buttons - end -->
-			</header>
+					</a>
 
-			<section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
-				<!-- content - start -->
-				<div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-					<p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Very proud to introduce</p>
-
-					<h1 class="text-black-800 mb-8 text-4xl font-bold sm:text-5xl md:mb-12 md:text-6xl">Revolutionary way to build the web</h1>
-
-					<p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">
-						This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random.
-					</p>
-
-					<div class="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-						<a
-							href="#"
-							class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
-						>
-							<span class="text-white">Start now</span>
-						</a>
-						<a
-							href="#"
-							class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-						>
-							<span class="text-gray-500">Take tour</span>
-						</a>
+					<div class="flex flex-col gap-2 p-4 lg:p-6">
+						<h2 class="text-xl font-bold text-gray-800">
+							<a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">
+								<span class="text-green-500">Spotify</span>
+							</a>
+						</h2>
+						<span class="text-sm text-gray-400">July 19, 2021</span>
+						<p class="text-gray-500">This is a section of some simple filler text, also known as placeholder text.</p>
 					</div>
 				</div>
-				<!-- content - end -->
+				<!-- article - end -->
 
-				<!-- image - start -->
-				<div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
-					<img src="../img/sotto.jpg" loading="lazy" alt="Photo by Fakurian Design" class="h-full w-full object-cover object-center" />
+				<!-- article - start -->
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
+					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
+						<img
+							src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+							loading="lazy"
+							alt="Photo by Lorenzo Herrera"
+							class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+						/>
+					</a>
+					<div class="flex flex-col gap-2 p-4 lg:p-6">
+						<h2 class="text-xl font-bold text-gray-800">
+							<a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">
+								<span class="text-red-500">Youtube</span>
+							</a>
+						</h2>
+						<span class="text-sm text-gray-400">April 07, 2021</span>
+						<p class="text-gray-500">This is a section of some simple filler text, also known as placeholder text.</p>
+					</div>
 				</div>
-				<!-- image - end -->
-			</section>
+				<!-- article - end -->
+
+				<!-- article - start -->
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
+					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
+						<img
+							src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=600"
+							loading="lazy"
+							alt="Photo by Magicle"
+							class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+						/>
+					</a>
+
+					<div class="flex flex-col gap-2 p-4 lg:p-6">
+						<h2 class="text-xl font-bold text-gray-800">
+							<a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">
+								<span class="text-blue-500">AmazonPrime</span>
+							</a>
+						</h2>
+						<span class="text-sm text-gray-400">March 15, 2021</span>
+						<p class="text-gray-500">This is a section of some simple filler text, also known as placeholder text.</p>
+					</div>
+				</div>
+				<!-- article - end -->
+
+				<!-- article - start -->
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
+					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
+						<img
+							src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600"
+							loading="lazy"
+							alt="Photo by Martin Sanchez"
+							class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+						/>
+					</a>
+
+					<div class="flex flex-col gap-2 p-4 lg:p-6">
+						<h2 class="text-xl font-bold text-gray-800">
+							<a href="#" class="transition duration-100 hover:text-indigo-500 active:text-indigo-600">
+								<span class="text-blue-800">U-next</span>
+							</a>
+						</h2>
+						<span class="text-sm text-gray-400">January 27, 2021</span>
+						<p class="text-gray-500">This is a section of some simple filler text, also known as placeholder text.</p>
+					</div>
+				</div>
+				<!-- article - end -->
+			</div>
 		</div>
 	</div>
-	<!-- hero - end -->
 </template>
 <script>
 module.exports = {
@@ -92,10 +113,3 @@ module.exports = {
 	},
 };
 </script>
-
-<style>
-.v-application a {
-	color: inherit; /* インヘリットすることで親要素の色を継承 */
-	text-decoration: none; /* 下線をなくす */
-}
-</style>
