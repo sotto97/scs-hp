@@ -52,7 +52,7 @@
 									</template>
 									<v-list-item v-for="list in nav_list.lists" :key="list">
 										<v-list-item-content>
-											<router-link :to="nav_list.path" class="black--text">{{ list }}</router-link>
+											<router-link :to="list.path" class="black--text">{{ list.name }}</router-link>
 										</v-list-item-content>
 									</v-list-item>
 								</v-list-group>
@@ -113,7 +113,8 @@
 				{ name: "ourStudio", path: "/ourStudio", component: httpVueLoader("./component/ourStudio.vue") },
 				{ name: "music", path: "/music", component: httpVueLoader("./component/music.vue") },
 				{ name: "apparel", path: "/apparel", component: httpVueLoader("./component/apparel.vue") },
-				{ name: "coding", path: "/coding", component: httpVueLoader("./component/coding.vue") },
+				{ name: "button", path: "/button", component: httpVueLoader("./component/button.vue") },
+				{ name: "subscription", path: "/subscription", component: httpVueLoader("./component/subscription.vue") },
 				{ name: "about", path: "/about", component: httpVueLoader("./component/about.vue") },
 			];
 
@@ -149,7 +150,17 @@
 					params: "coding",
 					title: "Coding",
 					icon: "mdi-code-tags",
-					path: "/coding",
+					lists: [
+						{
+							name: "Button",
+							path: "/button",
+						},
+						{
+							name: "Subscription",
+							path: "/subscription",
+						},
+					],
+					path: "",
 					color: "indigo",
 				},
 				{

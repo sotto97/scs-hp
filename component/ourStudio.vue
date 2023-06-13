@@ -4,7 +4,7 @@
 		<artist-component></artist-component>
 		<news-component></news-component>
 		<qa-component></qa-component>
-		<button-component></button-component>
+		<moc-component></moc-component>
 	</div>
 </template>
 
@@ -13,7 +13,7 @@ const AboutComponent = httpVueLoader("./about.vue");
 const ArtistComponent = httpVueLoader("./artist.vue");
 const NewsComponent = httpVueLoader("./news.vue");
 const QaComponent = httpVueLoader("./qa.vue");
-const ButtonComponent = httpVueLoader("./button.vue");
+const MocComponent = httpVueLoader("./moc.vue");
 
 module.exports = {
 	components: {
@@ -21,7 +21,7 @@ module.exports = {
 		ArtistComponent,
 		NewsComponent,
 		QaComponent,
-		ButtonComponent,
+		MocComponent,
 	},
 	name: "OurStudioComponent",
 };
