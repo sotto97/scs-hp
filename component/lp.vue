@@ -56,8 +56,8 @@
 						This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random.
 					</p>
 
-					<div class="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-						<a
+					<div class="gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
+						<!-- <a
 							href="#"
 							class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
 						>
@@ -68,6 +68,12 @@
 							class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
 						>
 							<span class="text-gray-500">Take tour</span>
+						</a> -->
+						<a href="#" class="rounded-lg bg-indigo-500 px-8 py-4 text-center text-sm font-semibold outline-none transition duration-100 hover:bg-indigo-600 active:bg-indigo-700 md:text-base">
+							<span class="text-white">Join Us</span>
+						</a>
+						<a href="#" class="rounded-lg bg-gray-200 px-8 py-4 text-center text-sm font-semibold transition duration-100 hover:bg-gray-300 active:text-gray-700 md:text-base">
+							<span class="text-gray-500">Career</span>
 						</a>
 					</div>
 				</div>
