@@ -110,13 +110,13 @@
 		<script>
 			const routes = [
 				{ name: "top", path: "/", component: httpVueLoader("./component/top.vue") },
-				{ name: "ourStudio", path: "/ourStudio", component: httpVueLoader("./component/ourStudio.vue") },
-				{ name: "music", path: "/music", component: httpVueLoader("./component/music.vue") },
-				{ name: "apparel", path: "/apparel", component: httpVueLoader("./component/apparel.vue") },
-				{ name: "button", path: "/button", component: httpVueLoader("./component/button.vue") },
-				{ name: "subscription", path: "/subscription", component: httpVueLoader("./component/subscription.vue") },
-				{ name: "prompt", path: "/prompt", component: httpVueLoader("./component/prompt.vue") },
-				{ name: "lp", path: "/lp", component: httpVueLoader("./component/lp.vue") },
+				{ name: "ourStudio", path: "/ourStudio", component: httpVueLoader("./component/ourStudio/main.vue") },
+				{ name: "music", path: "/music", component: httpVueLoader("./component/music/music.vue") },
+				{ name: "apparel", path: "/apparel", component: httpVueLoader("./component/apparel/apparel.vue") },
+				{ name: "button", path: "/button", component: httpVueLoader("./component/coding/button.vue") },
+				{ name: "subscription", path: "/subscription", component: httpVueLoader("./component/coding/subscription.vue") },
+				{ name: "prompt", path: "/prompt", component: httpVueLoader("./component/coding/prompt.vue") },
+				{ name: "lp", path: "/lp", component: httpVueLoader("./component/coding/lp.vue") },
 				{ name: "about", path: "/about", component: httpVueLoader("./component/about.vue") },
 			];
 
@@ -144,7 +144,7 @@
 					params: "apparel",
 					title: "Apparel",
 					icon: "mdi-tshirt-crew",
-					path: "",
+					path: "/apparel",
 					color: "indigo",
 				},
 				{
@@ -166,7 +166,7 @@
 							path: "/prompt",
 						},
 						{
-							name: "Lp",
+							name: "LP",
 							path: "/lp",
 						},
 					],
@@ -176,14 +176,23 @@
 				{
 					name: "Cafe",
 					icon: "mdi-coffee",
-					lists: ["神戸", "代官山"],
+					lists: [
+						{
+							name: "Kobe",
+							path: "/kobe",
+						},
+						{
+							name: "Daikanyama",
+							path: "/daiyanyama",
+						},
+					],
 					path: "",
 					color: "indigo",
 				},
 				{
 					name: "Graphic",
 					icon: "mdi-camera-iris",
-					lists: ["Photographer"],
+					lists: [{ name: "Photographer", path: "/photographer" }],
 					path: "",
 					color: "indigo",
 				},
@@ -206,10 +215,10 @@
 						nav_lists: nav_lists,
 						components: {
 							TopComponent: httpVueLoader("./component/top.vue"),
-							AboutComponent: httpVueLoader("./component/about.vue"),
-							NewsComponent: httpVueLoader("./component/news.vue"),
-							QaComponent: httpVueLoader("./component/qa.vue"),
-							ArtistComponent: httpVueLoader("./component/artist.vue"),
+							AboutComponent: httpVueLoader("./component/ourStudio/about.vue"),
+							NewsComponent: httpVueLoader("./component/ourStudio/news.vue"),
+							QaComponent: httpVueLoader("./component/ourStudio/qa.vue"),
+							ArtistComponent: httpVueLoader("./component/ourStudio/artist.vue"),
 						},
 					};
 				},

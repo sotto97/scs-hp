@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full bg-green-100 rounded-lg p-4">
+	<div class="w-full bg-indigo-100 rounded-lg p-4">
 		<div class="flex">
 			<div class="w-2/12"></div>
 			<div class="w-10/12">

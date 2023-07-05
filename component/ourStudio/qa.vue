@@ -1,13 +1,13 @@
 <template>
 	<div class="hs-accordion-group">
-		<h1 class="font-semibold text-xl"><span class="border-l-4 border-green-500 mr-2"></span>よくある問合せ</h1>
+		<h1 class="font-semibold text-xl"><span class="border-l-4 border-indigo-500 mr-2"></span>よくある問合せ</h1>
 		<div class="hs-accordion" id="hs-basic-heading-three" v-for="qa_list in qa_lists" :key="qa_list.question">
 			<button
-				class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+				class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left dark:hs-accordion-active:text-blue-500"
 				aria-controls="hs-basic-collapse-three"
 			>
 				<svg
-					class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+					class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3"
 					width="16"
 					height="16"
 					viewBox="0 0 16 16"
@@ -18,7 +18,7 @@
 					<path d="M8.12421 13.36V2.35999" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 				</svg>
 				<svg
-					class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+					class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3"
 					width="16"
 					height="16"
 					viewBox="0 0 16 16"
@@ -30,7 +30,7 @@
 				{{ qa_list.question }}
 			</button>
 			<div id="hs-basic-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-heading-three">
-				<p class="text-gray-800 dark:text-gray-200">
+				<p class="">
 					<em>{{ qa_list.answer }}</em>
 				</p>
 			</div>
