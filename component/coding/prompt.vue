@@ -47,7 +47,7 @@
 					<div class="w-2/12 h-10 text-center bg-gray-500 hover:bg-gray-700 hover:cursor-potinter text-white font-bold mr-2 py-1 rounded" @click="resetForm">
 						<span class="mdi mdi-refresh text-2xl"></span>
 					</div>
-					<div class="w-10/12 h-10 text-center bg-blue-500 text-white font-bold py-2 px-2 rounded">
+					<div class="w-10/12 h-10 text-center bg-indigo-500 text-white font-bold py-2 px-2 rounded">
 						<span>入力フォーム</span>
 					</div>
 				</div>
