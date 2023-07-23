@@ -47,7 +47,7 @@
 							allowfullscreen
 						></iframe>
 					</a>
-					<div class="flex flex-col gap-2 p-4 lg:p-6 w-32">
+					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
 							<span class="text-indigo-500 truncate">友達が夜に聴いているらしい曲 Mix</span>
 						</h2>
@@ -71,7 +71,7 @@
 							allowfullscreen
 						></iframe>
 					</a>
-					<div class="flex flex-col gap-2 p-4 lg:p-6 w-32">
+					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
 							<span class="text-indigo-500 truncate">一日の終わりに聴くと良さそうな曲 Mix</span>
 						</h2>
@@ -95,7 +95,7 @@
 							allowfullscreen
 						></iframe>
 					</a>
-					<div class="flex flex-col gap-2 p-4 lg:p-6 w-32">
+					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
 							<span class="text-indigo-500 truncate">とりあえず夜に部屋で流しておく曲 Mix</span>
 						</h2>
