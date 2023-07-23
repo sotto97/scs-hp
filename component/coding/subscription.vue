@@ -23,7 +23,7 @@
 							allowfullscreen
 						></iframe>
 					</a>
-					<div class="flex flex-col gap-2 p-4 lg:p-6 w-32">
+					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
 							<span class="text-indigo-500 truncate">日本語ラップとか個人的にエモくなれる曲 Mix</span>
 						</h2>
