@@ -63,7 +63,8 @@
 							<div class="p-2">
 								<p class="font-semibold">SCSは神戸を拠点に活動するクリエイティブ集団です。</p>
 								<p class="text-sm">スポンサー・メンバー随時募集しております。以下のフォームより承っております。</p>
-								<a href="" class="w-full cursor-pointer text-center">
+								<router-link :to="contact" class="black--text">Contact us</router-link>
+								<a href="/contact.vue" class="w-full cursor-pointer text-center">
 									<p class="py-1 border-solid border-2 border-black bg-black hover:bg-white transition text-white hover:text-black">Contact us</p>
 								</a>
 							</div>
@@ -117,6 +118,7 @@
 				{ name: "prompt", path: "/prompt", component: httpVueLoader("./component/coding/prompt.vue") },
 				{ name: "lp", path: "/lp", component: httpVueLoader("./component/coding/lp.vue") },
 				{ name: "about", path: "/about", component: httpVueLoader("./component/about.vue") },
+				{ name: "contact", path: "/contact", component: httpVueLoader("./contact.vue") },
 			];
 
 			const router = new VueRouter({
@@ -214,6 +216,7 @@
 							NewsComponent: httpVueLoader("./component/ourStudio/news.vue"),
 							QaComponent: httpVueLoader("./component/ourStudio/qa.vue"),
 							ArtistComponent: httpVueLoader("./component/ourStudio/artist.vue"),
+							ContactComponent: httpVueLoader("./contact.vue"),
 						},
 					};
 				},
