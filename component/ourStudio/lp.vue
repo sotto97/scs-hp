@@ -12,7 +12,7 @@
 				</a>
 			</header>
 
-			<section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+			<section class="mt-2 sm:mt-20 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
 				<!-- content - start -->
 				<div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
 					<p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Very proud to introduce</p>
@@ -39,7 +39,7 @@
 				<!-- content - end -->
 
 				<!-- image - start -->
-				<div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+				<div class="overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
 					<img src="../img/sotto.jpg" loading="lazy" alt="Photo by Fakurian Design" class="h-full w-full object-cover object-center" />
 				</div>
 				<!-- image - end -->

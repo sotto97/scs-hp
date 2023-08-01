@@ -2,7 +2,8 @@
 	<div class="bg-white py-6 sm:py-8 lg:py-12 w-full sm:w-3/5 mx-auto">
 		<div class="mt-4 mx-auto max-w-screen-2xl px-4 md:px-8">
 			<div class="hs-accordion-group">
-				<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">よくある問合せ</h2>
+				<p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">QA</p>
+				<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">問い合わせ</h2>
 				<div class="hs-accordion" id="hs-basic-heading-three" v-for="qa_list in qa_lists" :key="qa_list.question">
 					<button
 						class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left dark:hs-accordion-active:text-blue-500"
