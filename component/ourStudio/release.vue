@@ -6,9 +6,9 @@
 			<div class="w-full border-t-2" v-for="news_list in news_lists" :key="news_list.date">
 				<div class="p-2 sm:p-4 flex flex-wrap">
 					<div class="w-1/3 sm:w-1/6 text-center py-1 sm:py-2 px-4 bg-indigo-500 text-white rounded-md">{{ news_list.category }}</div>
-					<div class="w-2/3 sm:w-1/6 text-left my-auto px-4">{{ news_list.date }}</div>
-					<div class="pl-2 sm:pl-0 mt-2 sm:my-auto">
-						<a href="" class="w-full sm:w-4/6 text-left hover:underline hover:text-indigo-500 transition">{{ news_list.title }}</a>
+					<div class="w-2/3 sm:w-2/6 text-left my-auto px-4">{{ news_list.date }}</div>
+					<div class="w-full sm:w-3/6 pl-2 sm:pl-0 my-auto sm:my-auto">
+						<a href="" class="text-left hover:underline hover:text-indigo-500 transition">{{ news_list.title }}</a>
 					</div>
 				</div>
 			</div>
