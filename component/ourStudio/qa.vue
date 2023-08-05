@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white py-6 sm:py-8 lg:py-12 w-full sm:w-3/5 mx-auto">
+	<div class="bg-white py-6 sm:py-8 lg:py-12 w-full sm:w-3/4 md:w-4/5 mx-auto">
 		<div class="mt-4 mx-auto max-w-screen-2xl px-4 md:px-8">
 			<div class="hs-accordion-group">
 				<p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">QA</p>

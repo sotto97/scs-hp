@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white py-6 sm:py-8 lg:py-12 w-full sm:w-3/4 mx-auto">
+	<div class="bg-white py-6 sm:py-8 lg:py-12 w-full sm:w-3/4 md:w-4/5 mx-auto">
 		<div class="mt-4 mx-auto max-w-screen-2xl px-4 md:px-8">
 			<p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">News</p>
 			<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">プレスリリース</h2>
@@ -14,9 +14,7 @@
 			</div>
 			<div class="w-full border-b-2"></div>
 			<div class="w-full mt-4 text-center align-center">
-				<button class="text-indigo-500 hover:text-white bg-white hover:bg-indigo-600 transition border-2 border-solid border-indigo-500 font-semibold py-4 px-20 text-xs rounded-md">
-					過去のプレスリリースも見る
-				</button>
+				<button class="text-indigo-500 hover:text-white bg-white hover:bg-indigo-600 transition border-2 border-solid border-indigo-500 font-semibold py-4 px-20 text-xs rounded-md">View More</button>
 			</div>
 		</div>
 	</div>
