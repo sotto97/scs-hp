@@ -15,7 +15,7 @@
 			<section class="mt-2 sm:mt-20 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
 				<!-- content - start -->
 				<div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-					<p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Very proud to introduce</p>
+					<p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Sotto Creative Studio</p>
 					<h1 class="text-black-800 mb-8 text-4xl font-bold sm:text-5xl md:mb-12 md:text-6xl">Revolutionary way to build the web</h1>
 					<p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">
 						This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random.
@@ -40,7 +40,7 @@
 
 				<!-- image - start -->
 				<div class="overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
-					<img src="../img/sotto.jpg" loading="lazy" alt="Photo by Fakurian Design" class="h-full w-full object-cover object-center" />
+					<img src="../img/sotto.jpg" loading="lazy" alt="Photo by Fakurian Design" class="h-60 sm:h-full w-full object-cover object-center" />
 				</div>
 				<!-- image - end -->
 				<!-- social - start -->

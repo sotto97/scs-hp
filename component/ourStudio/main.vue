@@ -5,7 +5,7 @@
 		<artist-component></artist-component>
 		<release-component></release-component>
 		<qa-component></qa-component>
-		<moc-component></moc-component>
+		<!-- <moc-component></moc-component> -->
 	</div>
 </template>
 
