@@ -16,7 +16,7 @@
 				<!-- content - start -->
 				<div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
 					<p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Sotto Creative Studio</p>
-					<h1 class="text-black-800 mb-8 text-4xl font-bold sm:text-5xl md:mb-12 md:text-6xl">Expressing freely from every standpoint</h1>
+					<h1 class="text-black-800 mb-8 text-3xl font-bold sm:text-5xl md:mb-12 md:text-6xl">Expressing freely from every standpoint</h1>
 					<p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">Where creativity knows no boundaries. Music, graphics, apparel, and café ventures</p>
 					<div class="gap-2.5 flex sm:flex-row sm:justify-center lg:justify-start w-full">
 						<div class="w-1/2 md:w-auto">
