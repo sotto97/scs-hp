@@ -11,7 +11,7 @@
 			</div> -->
 			<div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-2 xl:grid-cols-2 xl:gap-8">
 				<!-- article - start -->
-				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row bg-indigo-100">
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
 					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
 						<iframe
 							width="100%"
@@ -35,7 +35,7 @@
 						</p> -->
 					</div>
 				</div>
-				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row bg-indigo-100">
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
 					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
 						<iframe
 							width="100%"
@@ -59,7 +59,7 @@
 						</p> -->
 					</div>
 				</div>
-				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row bg-indigo-100">
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
 					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
 						<iframe
 							width="100%"
@@ -83,7 +83,7 @@
 						</p> -->
 					</div>
 				</div>
-				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row bg-indigo-100">
+				<div class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row">
 					<a href="#" class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
 						<iframe
 							width="100%"
