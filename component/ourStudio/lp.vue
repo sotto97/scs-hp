@@ -1,6 +1,6 @@
 <template>
 	<!-- 参考はこれ；https://flowrift.com/c/full-page/6tdav?view=preview -->
-	<div class="bg-white pb-6 sm:pb-8 lg:pb-12 h-screen">
+	<div class="bg-white pb-6 sm:pb-8 lg:pb-12">
 		<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
 			<header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
 				<!-- logo - start -->
@@ -40,9 +40,10 @@
 
 				<!-- image - start -->
 				<div class="overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
-					<img src="../img/sotto.jpg" loading="lazy" alt="Photo by Fakurian Design" class="h-60 sm:h-full w-full object-cover object-center" />
+					<img src="../img/sotto.jpg" loading="lazy" alt="Photo by Fakurian Design" class="h-56 sm:h-60 md:h-96 lg:h-full w-full object-cover object-center" />
 				</div>
 				<!-- image - end -->
+
 				<!-- social - start -->
 				<div class="mt-4 flex items-center justify-center gap-4 sm:mt-16 lg:justify-start">
 					<span class="text-sm font-semibold uppercase tracking-widest text-gray-400 sm:text-base">Social</span>
