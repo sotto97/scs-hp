@@ -4,68 +4,60 @@
 			<div class="hs-accordion-group">
 				<p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">QA</p>
 				<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">問い合わせ</h2>
-				<div class="hs-accordion" id="hs-basic-heading-three" v-for="qa_list in qa_lists" :key="qa_list.question">
-					<button
-						class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left dark:hs-accordion-active:text-blue-500"
-						aria-controls="hs-basic-collapse-three"
-					>
-						<svg
-							class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3"
-							width="16"
-							height="16"
-							viewBox="0 0 16 16"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path d="M2.62421 7.86L13.6242 7.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-							<path d="M8.12421 13.36V2.35999" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-						</svg>
-						<svg
-							class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3"
-							width="16"
-							height="16"
-							viewBox="0 0 16 16"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path d="M2.62421 7.86L13.6242 7.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-						</svg>
-						{{ qa_list.question }}
-					</button>
-					<div id="hs-basic-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-heading-three">
-						<p class="">
-							<em>{{ qa_list.answer }}</em>
-						</p>
+
+				<form @submit.prevent="submitForm">
+					<!-- Name -->
+					<div class="sm:col-span-4">
+						<label for="username" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+						<div class="mt-2">
+							<div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+								<input
+									type="text"
+									name="username"
+									id="username"
+									autocomplete="username"
+									class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+									placeholder="janesmith"
+								/>
+							</div>
+						</div>
 					</div>
-				</div>
+					<!-- Email -->
+					<div class="sm:col-span-4">
+						<label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+						<div class="mt-2">
+							<div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+								<input
+									type="text"
+									name="email"
+									id="email"
+									autocomplete="email"
+									class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+									placeholder="scs@example.com"
+								/>
+							</div>
+						</div>
+					</div>
+					<!-- Context -->
+					<div class="col-span-full">
+						<label for="about" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+						<div class="mt-2">
+							<textarea
+								id="about"
+								name="about"
+								rows="3"
+								class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+							></textarea>
+						</div>
+					</div>
+					<!-- Submitボタン -->
+					<div class="text-center w-full mt-4">
+						<button class="text-indigo-500 hover:text-white bg-white hover:bg-indigo-600 transition border-2 border-solid border-indigo-500 font-semibold py-4 px-20 text-xs rounded-md">Send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
 </template>
 
-<script>
-const qa_lists = [
-	{
-		question: "SCSにどうやったら加入できますか？",
-		answer:
-			"基本的には募集は行っておらず、こちらが一緒に仕事をしたい！と思った方にお声がけをさせていただいております。しかし、ポートフォリオ等お持ちであればフォームから送っていただければこちらで確認はさせていただきます。",
-	},
-	{
-		question: "SNSに載せても良いですか？",
-		answer: "TikTok以外のSNS媒体であれば自由に載せていただいて構いません。",
-	},
-	{
-		question: "オファーを出したいのですが",
-		answer: "こちらのお問合せフォームよりお願いいたします。",
-	},
-];
-
-module.exports = {
-	data: function () {
-		return {
-			qa_lists: qa_lists,
-			name: "NewsComponent",
-		};
-	},
-};
-</script>
+<script></script>

@@ -16,23 +16,6 @@
 				<p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
 					「SCS」はさまざまなセクションで構成されていて、音楽、グラフィック、アパレルなど、各々の立ち位置で自由に表現活動を行う集団です。
 				</p>
-				<!-- <div class="flex justify-center">
-					<div style="width: 160px; height: 160px" class="m-1 bg-indigo-500 text-center text-white rounded-md">
-						<p class="text-white p-2"></p>
-					</div>
-					<div style="width: 160px; height: 160px" class="m-1 bg-indigo-500 text-center text-white rounded-md">
-						<p class="text-white p-2"></p>
-					</div>
-					<div style="width: 160px; height: 160px" class="m-1 bg-indigo-500 text-center text-white rounded-md">
-						<p class="text-white p-2"></p>
-					</div>
-					<div style="width: 160px; height: 160px" class="m-1 bg-indigo-500 text-center text-white rounded-md">
-						<p class="text-white p-2"></p>
-					</div>
-					<div style="width: 160px; height: 160px" class="m-1 bg-indigo-500 text-center text-white rounded-md">
-						<p class="text-white p-2"></p>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</div>
