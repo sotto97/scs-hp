@@ -25,7 +25,7 @@
 					</a>
 					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
-							<span class="text-indigo-500 truncate">日本語ラップとか個人的にエモくなれる曲 Mix</span>
+							<span class="text-teal-500 truncate">日本語ラップとか個人的にエモくなれる曲 Mix</span>
 						</h2>
 						<span class="text-sm text-gray-400">1,994,617 回視聴</span>
 						<span class="text-sm text-gray-400">公開日：2020/11/15</span>
@@ -49,7 +49,7 @@
 					</a>
 					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
-							<span class="text-indigo-500 truncate">友達が夜に聴いているらしい曲 Mix</span>
+							<span class="text-teal-500 truncate">友達が夜に聴いているらしい曲 Mix</span>
 						</h2>
 						<span class="text-sm text-gray-400">2,004,924 回視聴</span>
 						<span class="text-sm text-gray-400">公開日：2020/12/12</span>
@@ -73,7 +73,7 @@
 					</a>
 					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
-							<span class="text-indigo-500 truncate">一日の終わりに聴くと良さそうな曲 Mix</span>
+							<span class="text-teal-500 truncate">一日の終わりに聴くと良さそうな曲 Mix</span>
 						</h2>
 						<span class="text-sm text-gray-400">1,904,021 回視聴</span>
 						<span class="text-sm text-gray-400">公開日：2021/01/19</span>
@@ -97,7 +97,7 @@
 					</a>
 					<div class="flex flex-col gap-2 p-4 lg:p-6 w-full md:w-32">
 						<h2 class="text-xl font-bold text-gray-800 truncate">
-							<span class="text-indigo-500 truncate">とりあえず夜に部屋で流しておく曲 Mix</span>
+							<span class="text-teal-500 truncate">とりあえず夜に部屋で流しておく曲 Mix</span>
 						</h2>
 						<span class="text-sm text-gray-400">694,111 回視聴</span>
 						<span class="text-sm text-gray-400">公開日：2022/09/19</span>

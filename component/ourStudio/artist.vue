@@ -7,25 +7,23 @@
 					<div class="bg-black h-48 rounded-lg mr-2 shadow-xl">
 						<img src="../img/sotto.jpg" class="h-48 mx-auto rounded-lg" alt="" />
 					</div>
-					<p class="font-semibold pt-2 text-lg">Sotto<span class="pl-2 text-xs text-indigo-500">DJ/Engineer</span></p>
+					<p class="font-semibold pt-2 text-lg">Sotto<span class="pl-2 text-xs text-teal-500">DJ/Engineer</span></p>
 				</div>
 				<div class="inline-block h-auto w-6/12">
 					<div class="bg-black h-48 rounded-lg mr-2 shadow-xl">
 						<img src="../img/sotto.jpg" class="h-48 mx-auto rounded-lg" alt="" />
 					</div>
-					<p class="font-semibold pt-2 text-lg">David<span class="pl-2 text-xs text-indigo-500">Photographer</span></p>
+					<p class="font-semibold pt-2 text-lg">David<span class="pl-2 text-xs text-teal-500">Photographer</span></p>
 				</div>
 				<div class="inline-block h-auto w-6/12">
 					<div class="bg-black h-48 rounded-lg mr-2 shadow-xl">
 						<img src="../img/sotto.jpg" class="h-48 mx-auto rounded-lg" alt="" />
 					</div>
-					<p class="font-semibold pt-2 text-lg">Atrax<span class="pl-2 text-xs text-indigo-500">Barista</span></p>
+					<p class="font-semibold pt-2 text-lg">Atrax<span class="pl-2 text-xs text-teal-500">Barista</span></p>
 				</div>
 			</div>
 			<div class="w-full mt-4 text-center align-center">
-				<button class="text-indigo-500 hover:text-white bg-white hover:bg-indigo-600 transition border-2 border-solid border-indigo-500 font-semibold py-4 px-20 text-xs rounded-md">
-					View Detail
-				</button>
+				<button class="text-teal-500 hover:text-white bg-white hover:bg-teal-600 transition border-2 border-solid border-teal-500 font-semibold py-4 px-20 text-xs rounded-md">View Detail</button>
 			</div>
 		</div>
 	</div>
