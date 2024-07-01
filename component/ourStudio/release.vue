@@ -1,20 +1,22 @@
 <template>
 	<div class="bg-white py-6 sm:py-8 lg:py-12 w-full sm:w-3/4 md:w-4/5 mx-auto">
 		<div class="mt-4 mx-auto max-w-screen-2xl px-4 md:px-8">
-			<p class="mb-2 text-center font-semibold text-teal-500 md:mb-3 lg:text-lg">News</p>
+			<p class="mb-2 text-center font-semibold text-emerald-500 md:mb-3 lg:text-lg">News</p>
 			<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">プレスリリース</h2>
 			<div class="w-full border-t-2" v-for="news_list in news_lists" :key="news_list.date">
 				<div class="p-2 sm:p-4 flex flex-wrap">
-					<div class="w-1/3 sm:w-1/6 text-center py-1 sm:py-2 px-4 bg-teal-500 text-white rounded-md">{{ news_list.category }}</div>
+					<div class="w-1/3 sm:w-1/6 text-center py-1 sm:py-2 px-4 bg-emerald-500 text-white rounded-md">{{ news_list.category }}</div>
 					<div class="w-2/3 sm:w-2/6 text-left my-auto px-4">{{ news_list.date }}</div>
 					<div class="w-full sm:w-3/6 pl-2 sm:pl-0 my-auto sm:my-auto">
-						<a href="" class="text-left hover:underline hover:text-teal-500 transition">{{ news_list.title }}</a>
+						<a href="" class="text-left hover:underline hover:text-emerald-500 transition">{{ news_list.title }}</a>
 					</div>
 				</div>
 			</div>
 			<div class="w-full border-b-2"></div>
 			<div class="w-full mt-4 text-center align-center">
-				<button class="text-teal-500 hover:text-white bg-white hover:bg-teal-600 transition border-2 border-solid border-teal-500 font-semibold py-4 px-20 text-xs rounded-md">View More</button>
+				<button class="text-emerald-500 hover:text-white bg-white hover:bg-emerald-600 transition border-2 border-solid border-emerald-500 font-semibold py-4 px-20 text-xs rounded-md">
+					View More
+				</button>
 			</div>
 		</div>
 	</div>

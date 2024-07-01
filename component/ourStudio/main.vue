@@ -4,7 +4,7 @@
 		<about-component></about-component>
 		<!-- <artist-component></artist-component> -->
 		<!-- <release-component></release-component> -->
-		<faq-component></faq-component>
+		<!-- <faq-component></faq-component> -->
 		<qa-component></qa-component>
 		<!-- <moc-component></moc-component> -->
 	</div>
