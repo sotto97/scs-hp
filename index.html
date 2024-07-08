@@ -27,7 +27,7 @@
 		<div id="app">
 			<v-app>
 				<!-- ハンバーガーメニュー内 -->
-				<v-navigation-drawer app v-model="drawer" clipped elevation="18">
+				<!-- <v-navigation-drawer app v-model="drawer" clipped elevation="18">
 					<v-container>
 						<v-list-item>
 							<v-list-item-title class="title"> Sotto Creative Studio </v-list-item-title>
@@ -58,33 +58,21 @@
 								</v-list-group>
 							</v-list>
 						</v-list-item-group>
-						<!-- <v-divider></v-divider> -->
-						<!-- <div class="bg-gray-100 h-auto rounded-lg mt-4">
-							<div class="p-2">
-								<p class="font-semibold">SCSは神戸を拠点に活動するクリエイティブ集団です。</p>
-								<p class="text-sm">スポンサー・メンバー随時募集しております。以下のフォームより承っております。</p>
-								<router-link :to="contact" class="black--text">Contact us</router-link>
-								<div class="bg-emerald-500 px-2 py-2 text-center hover:bg-emerald-600 rounded-lg outline-none transition">
-									<a href="/contact.vue" class="">
-										<span class="text-white font-semibold">Contact us</span>
-									</a>
-								</div>
-							</div>
-						</div> -->
 					</v-container>
-				</v-navigation-drawer>
+				</v-navigation-drawer> -->
 				<!-- ヘッダー部分 -->
 				<v-app-bar color="black" dark app clipped-left>
 					<v-row align="center" no-gutters>
 						<!-- ハンバーガーメニュー -->
 						<v-col cols="2">
-							<v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+							<!-- <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> -->
 						</v-col>
 						<!-- ヘッダータイトル -->
 						<v-col cols="8">
 							<v-toolbar-title>
 								<div class="text-center">
-									<a href="/" class="white--text">Sotto Creative Studio</a>
+									<!-- <a href="/" class="">Sotto Creative Studio</a> -->
+									<a href="/"><img src="./img/scs_header.png" alt="" class="w-16 mx-auto" /></a>
 								</div>
 							</v-toolbar-title>
 						</v-col>
@@ -132,7 +120,7 @@
 					name: "Our Studio",
 					icon: "mdi-garage-open",
 					path: "/ourStudio",
-					color: "emerald",
+					color: "teal",
 				},
 				{
 					name: "Music",
@@ -140,7 +128,7 @@
 					title: "Music",
 					icon: "mdi-music",
 					path: "/music",
-					color: "emerald",
+					color: "teal",
 				},
 				{
 					name: "Apparel",
@@ -148,7 +136,7 @@
 					title: "Apparel",
 					icon: "mdi-tshirt-crew",
 					path: "/apparel",
-					color: "emerald",
+					color: "teal",
 				},
 				{
 					name: "Coding",
@@ -170,7 +158,7 @@
 						},
 					],
 					path: "",
-					color: "emerald",
+					color: "teal",
 				},
 				{
 					name: "Cafe",
@@ -186,20 +174,20 @@
 						},
 					],
 					path: "",
-					color: "emerald",
+					color: "teal",
 				},
 				{
 					name: "Graphic",
 					icon: "mdi-camera-iris",
 					lists: [{ name: "Photographer", path: "/photographer" }],
 					path: "",
-					color: "emerald",
+					color: "teal",
 				},
 				{
 					name: "Fitness Gym",
 					icon: "mdi-dumbbell",
 					path: "",
-					color: "emerald",
+					color: "teal",
 				},
 			];
 

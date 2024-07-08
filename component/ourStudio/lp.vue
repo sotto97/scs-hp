@@ -2,19 +2,15 @@
 	<!-- 参考はこれ；https://flowrift.com/c/full-page/6tdav?view=preview -->
 	<div class="bg-white pb-6 sm:pb-8 lg:pb-12">
 		<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-			<header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
-				<!-- logo - start -->
+			<!-- <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
 				<a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
-					<svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-6 text-emerald-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-						<path d="M96 0V47L48 94H0V47L48 0H96Z" />
-					</svg>
+					<img src="../img/scs_logo_black.png" class="h-auto w-8" />
 					<span class="text-black-800">SCS</span>
 				</a>
-			</header>
-
+			</header> -->
 			<section class="mt-2 sm:mt-20 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
 				<!-- content - start -->
-				<div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+				<div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-4/12 xl:py-24">
 					<p class="mb-4 font-semibold text-emerald-500 md:mb-6 md:text-lg xl:text-xl">Sotto Creative Studio</p>
 					<h1 class="text-black-800 mb-8 text-3xl font-bold sm:text-5xl md:mb-12 md:text-6xl">Believing in growth potential</h1>
 					<p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">Let’s challenge, grow, and create the future together. We are fully committed to supporting your success.</p>
@@ -37,13 +33,13 @@
 				<!-- content - end -->
 
 				<!-- image - start -->
-				<div class="overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+				<div class="overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-4/12">
 					<img src="../img/sotto.jpg" loading="lazy" alt="Photo by Fakurian Design" class="h-56 sm:h-60 md:h-96 lg:h-full w-full object-cover object-center" />
 				</div>
 				<!-- image - end -->
 
 				<!-- social - start -->
-				<div class="mt-4 flex items-center justify-center gap-4 sm:mt-16 lg:justify-start">
+				<div class="mt-4 flex items-center justify-center gap-4 sm:mt-16 lg:justify-start xl:w-4/12">
 					<span class="text-sm font-semibold uppercase tracking-widest text-gray-400 sm:text-base">Social</span>
 					<span class="h-px w-12 bg-gray-200"></span>
 					<div class="flex gap-4">

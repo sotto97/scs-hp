@@ -54,7 +54,7 @@
 					</div>
 					<!-- Submitボタン -->
 					<div class="text-center w-full mt-4">
-						<button class="text-emerald-500 hover:text-white bg-white hover:bg-emerald-600 transition border-2 border-solid border-emerald-500 font-semibold py-4 px-20 text-xs rounded-md">
+						<button class="text-emerald-500 hover:text-white bg-white hover:bg-emerald-600 w-full transition border-2 border-solid border-emerald-600 font-semibold py-4 px-20 text-xs rounded-md">
 							Send
 						</button>
 					</div>
